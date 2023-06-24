@@ -4,6 +4,7 @@ import logging
 
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 
+# project_name = "cnnClassifier"
 project_name = "cnnCloud"
 
 list_of_files = [
@@ -22,7 +23,8 @@ list_of_files = [
     "requirements.txt",
     "setup.py",
     "research/trials.ipynb",
-    "test.py"
+    "test.py",
+    "templates/index.html"
 ]
 
 for filepath in list_of_files:
