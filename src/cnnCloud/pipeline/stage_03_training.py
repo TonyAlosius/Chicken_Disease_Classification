@@ -1,7 +1,6 @@
 from src.cnnCloud.config.configuration import ConfigurationManager
 from src.cnnCloud.components.prepare_callbacks import PrepareCallback
 from src.cnnCloud.components.training import Training
-
 from src.cnnCloud import logger
 
 STAGE_NAME = "Training"
