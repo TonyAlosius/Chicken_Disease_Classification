@@ -161,3 +161,4 @@ cython_debug/
 
 
 artifacts/*
+artifacts/data_ingestion/Chicken-fecal-images
