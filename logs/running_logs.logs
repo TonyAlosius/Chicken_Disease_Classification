@@ -237,3 +237,127 @@ x==========x]
 [2023-06-26 15:38:17,647: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
 
 x==========x]
+[2023-06-26 15:52:08,724: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-06-26 15:52:08,727: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-06-26 15:52:08,728: INFO: common: created directory at: artifacts]
+[2023-06-26 15:52:08,729: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2023-06-26 15:52:08,730: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-06-26 16:11:36,835: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-06-26 16:11:36,837: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-06-26 16:11:36,838: INFO: common: created directory at: artifacts]
+[2023-06-26 16:11:36,838: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2023-06-26 16:11:36,839: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-06-26 16:11:36,840: INFO: common: created directory at: artifacts\training]
+[2023-06-26 16:38:48,427: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-06-26 16:38:48,429: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-06-26 16:38:48,430: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-06-26 16:38:48,430: INFO: common: created directory at: artifacts]
+[2023-06-26 16:38:48,431: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-26 16:47:51,157: ERROR: main: <urlopen error retrieval incomplete: got only 8187712 out of 11616915 bytes>]
+Traceback (most recent call last):
+  File "C:\Users\tonya\iNeuron\Chicken_Disease_Classification\Chicken_Disease_Classification\main.py", line 11, in <module>
+    data_ingestion.main()
+  File "C:\Users\tonya\iNeuron\Chicken_Disease_Classification\Chicken_Disease_Classification\src\cnnCloud\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "C:\Users\tonya\iNeuron\Chicken_Disease_Classification\Chicken_Disease_Classification\src\cnnCloud\components\data_ingestion.py", line 16, in download_file
+    filename, headers = request.urlretrieve(
+                        ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tonya\AppData\Local\Programs\Python\Python311\Lib\urllib\request.py", line 280, in urlretrieve
+    raise ContentTooShortError(
+urllib.error.ContentTooShortError: <urlopen error retrieval incomplete: got only 8187712 out of 11616915 bytes>
+[2023-06-26 20:05:48,910: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-06-26 20:05:48,914: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-06-26 20:05:48,915: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-06-26 20:05:48,916: INFO: common: created directory at: artifacts]
+[2023-06-26 20:05:48,916: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-26 20:05:52,410: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: D53E:4973:1F86BA:2CD5A8:6499A23C
+Accept-Ranges: bytes
+Date: Mon, 26 Jun 2023 14:35:48 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100023-HYD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1687790148.604908,VS0,VE817
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 9f94b5f74dbf8071b50a9b46fcbfeabad2c1229f
+Expires: Mon, 26 Jun 2023 14:40:48 GMT
+Source-Age: 0
+
+]
+[2023-06-26 20:05:52,752: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-06-26 20:05:52,752: INFO: main: *******************]
+[2023-06-26 20:05:52,752: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2023-06-26 20:05:52,754: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-06-26 20:05:52,756: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-06-26 20:05:52,756: INFO: common: created directory at: artifacts]
+[2023-06-26 20:05:52,756: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-06-26 20:05:53,418: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-06-26 20:05:53,633: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2023-06-26 20:05:53,633: INFO: main: *******************]
+[2023-06-26 20:05:53,634: INFO: main: >>>>>> stage Training started <<<<<<]
+[2023-06-26 20:05:53,636: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-06-26 20:05:53,637: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-06-26 20:05:53,638: INFO: common: created directory at: artifacts]
+[2023-06-26 20:05:53,639: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2023-06-26 20:05:53,640: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-06-26 20:05:53,641: INFO: common: created directory at: artifacts\training]
+[2023-06-26 20:05:54,079: ERROR: main: Could not import PIL.Image. The use of `load_img` requires PIL.]
+Traceback (most recent call last):
+  File "C:\Users\tonya\iNeuron\Chicken_Disease_Classification\Chicken_Disease_Classification\main.py", line 37, in <module>
+    model_trainer.main()
+  File "C:\Users\tonya\iNeuron\Chicken_Disease_Classification\Chicken_Disease_Classification\src\cnnCloud\pipeline\stage_03_training.py", line 24, in main
+    training.train(
+  File "C:\Users\tonya\iNeuron\Chicken_Disease_Classification\Chicken_Disease_Classification\src\cnnCloud\components\training.py", line 70, in train
+    self.model.fit(
+  File "C:\Users\tonya\AppData\Local\Programs\Python\Python311\Lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\tonya\AppData\Local\Programs\Python\Python311\Lib\site-packages\keras\utils\image_utils.py", line 414, in load_img
+    raise ImportError(
+ImportError: Could not import PIL.Image. The use of `load_img` requires PIL.
+[2023-06-26 20:08:50,993: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-06-26 20:08:50,995: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-06-26 20:08:50,996: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-06-26 20:08:50,997: INFO: common: created directory at: artifacts]
+[2023-06-26 20:08:50,997: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-26 20:08:50,997: INFO: data_ingestion: File already exists of size: ~ 11345 KB]
+[2023-06-26 20:08:51,229: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-06-26 20:08:51,229: INFO: main: *******************]
+[2023-06-26 20:08:51,230: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2023-06-26 20:08:51,231: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-06-26 20:08:51,232: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-06-26 20:08:51,232: INFO: common: created directory at: artifacts]
+[2023-06-26 20:08:51,233: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-06-26 20:08:51,649: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-06-26 20:08:51,865: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2023-06-26 20:08:51,866: INFO: main: *******************]
+[2023-06-26 20:08:51,866: INFO: main: >>>>>> stage Training started <<<<<<]
+[2023-06-26 20:08:51,868: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-06-26 20:08:51,870: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-06-26 20:08:51,870: INFO: common: created directory at: artifacts]
+[2023-06-26 20:08:51,870: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2023-06-26 20:08:51,870: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-06-26 20:08:51,872: INFO: common: created directory at: artifacts\training]
+[2023-06-26 20:09:18,275: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
