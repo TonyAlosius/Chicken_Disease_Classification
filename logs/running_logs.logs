@@ -623,3 +623,5 @@ x==========x]
 [2023-06-26 22:15:09,842: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
 
 x==========x]
+[2023-06-26 22:15:10,651: INFO: _internal: 127.0.0.1 - - [26/Jun/2023 22:15:10] "GET /train HTTP/1.1" 200 -]
+[2023-06-26 22:15:10,770: INFO: _internal: 127.0.0.1 - - [26/Jun/2023 22:15:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
