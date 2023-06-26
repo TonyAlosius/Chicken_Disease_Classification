@@ -1,4 +1,4 @@
 from pathlib import Path
 
-CONFIG_FILEPATH = PATH("config/config.yaml")
-PARAMS_FILEPATH = PATH("param.yaml")
+CONFIG_FILE_PATH = Path("config/config.yaml")
+PARAMS_FILE_PATH = Path("params.yaml")

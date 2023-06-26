@@ -1,8 +1,9 @@
 import os
 from box.exceptions import BoxValueError
 import yaml
-from cnnCloud import logger
+from src.cnnCloud import logger
 import json
+import joblib
 from ensure import ensure_annotations
 from box import ConfigBox
 from pathlib import Path
@@ -11,9 +12,6 @@ import base64
 
 
 @ensure_annotations
-# @ensure_annotations in research/trials.ipynb
-# Return values in types of ConfigBox Type
-# So that we can access dictionary using dict.keys
 def read_yaml(path_to_yaml: Path) -> ConfigBox:
     """reads yaml file and returns
 
@@ -33,7 +31,7 @@ def read_yaml(path_to_yaml: Path) -> ConfigBox:
             logger.info(f"yaml file: {path_to_yaml} loaded successfully")
             return ConfigBox(content)
     except BoxValueError:
-        raise ValueError("Yaml file is empty")
+        raise ValueError("yaml file is empty")
     except Exception as e:
         raise e
 
@@ -49,7 +47,7 @@ def create_directories(path_to_directories: list, verbose=True):
     for path in path_to_directories:
         os.makedirs(path, exist_ok=True)
         if verbose:
-            logger.info(f"Created directory at: {path}")
+            logger.info(f"created directory at: {path}")
 
 
 @ensure_annotations
@@ -63,7 +61,7 @@ def save_json(path: Path, data: dict):
     with open(path, "w") as f:
         json.dump(data, f, indent=4)
 
-    logger.info(f"Json file saved at: {path}")
+    logger.info(f"json file saved at: {path}")
 
 
 @ensure_annotations
